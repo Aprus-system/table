@@ -1,4 +1,4 @@
-| Basic Detector | Detection Framework | Deep Learning Framework | Network Configuration | Divide Size(px) |  mAP  | mAP<sup>50</sup> |  mAR  | FP16 Time(s) | TRT Time(s)[^1] |
+| Basic Detector | Detection Framework | Deep Learning Framework | Network Configuration | Divide Size(px) |  mAP[^1]  | mAP<sup>50</sup>[^1] |  mAR[^1]  | FP16 Time(s) | TRT Time(s)[^2] |
 |:--------------:|:-------------------:|:-----------------------:|:---------------------:|:---------------:|:-----:|:-----:|:-----:|:------------:|:-----------:|
 |     ppyolo     |   PaddleDetection   |       PaddlePaddle      |          tiny         |       640       | 0.354 |  0.74 | 0.454 |     1.262    |    0.638    |
 |     ppyolo     |   PaddleDetection   |       PaddlePaddle      |          tiny         |       1280      | 0.428 | 0.826 | 0.519 |     1.144    |    0.726    |
@@ -76,4 +76,5 @@
 |      yolox     |        YOLOX        |         Pytorch         |           x           |       640       | 0.483 | 0.869 | 0.612 |    30.876    |     6.26    |
 |      yolox     |        YOLOX        |         Pytorch         |           x           |       1280      |  0.59 | 0.945 | 0.664 |    31.932    |     N/A     |
 
-[^1]: If the inference time in the table is N/A, that means the model cannot be accelerated by TensorRT.
+[^1]: The mAP, mAP<sup>50</sup> and mAR of each model are the average values at all altitudes.
+[^2]: If the inference time in the table is N/A, that means the model cannot be accelerated by TensorRT.
